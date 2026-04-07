@@ -12,9 +12,9 @@ PROENERGIA+ IEP is a spatial data infrastructure and visualization platform for 
 
 This guide is divided into three parts:
 
-- **[Backend](./backend/02-accessing-admin)** — Django Admin interface, user management, data model configuration, scenario and dataset management, JSON configuration, and API reference.
-- **[Frontend](./frontend/12-interface-overview)** — Visualization interface, filter controls, map interaction, scenario selection, analysis summaries, and downloads.
-- **[Deployment](./deployment/20-server-requirements)** — Server setup, systemd services, Nginx, Celery, RabbitMQ, environment variables, and update procedures.
+- **[Backend](./backend/accessing-admin)** — Django Admin interface, user management, data model configuration, scenario and dataset management, JSON configuration, and API reference.
+- **[Frontend](./frontend/interface-overview)** — Visualization interface, filter controls, map interaction, scenario selection, analysis summaries, and downloads.
+- **[Deployment](./deployment/server-requirements)** — Server setup, systemd services, Nginx, Celery, RabbitMQ, environment variables, and update procedures.
 
 ## System Architecture
 
