@@ -23,5 +23,5 @@ This guide is divided into three parts:
 | Backend API (Django REST) | Serves data to the frontend. Django + DRF, backed by PostgreSQL 16 / PostGIS. Admin at `/admin/`. API at `/api/v1/`. |
 | Task Queue (Celery / RabbitMQ) | Background workers for file conversion (GDAL → FlatGeobuf → PMTiles via Tippecanoe). |
 | Frontend (Next.js / TypeScript) | MapLibre GL mapping + Chakra UI. Supports English and Portuguese (default). |
-| Object Storage | Stores uploaded source files and derived PMTiles. |
+| File Storage | Stores uploaded source files and derived PMTiles. |
 | Tile Delivery (PMTiles) | Vector tiles via HTTP range requests. Raster layers via Cloud-Optimized GeoTIFF (COG). |
