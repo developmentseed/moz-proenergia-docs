@@ -1,0 +1,18 @@
+{
+  "sidebar.docs.category.Backend": {
+    "message": "Backend",
+    "description": "The label for the Backend category in the sidebar"
+  },
+  "sidebar.docs.category.Frontend": {
+    "message": "Frontend",
+    "description": "The label for the Frontend category in the sidebar"
+  },
+  "sidebar.docs.category.Deployment": {
+    "message": "Implantação",
+    "description": "The label for the Deployment category in the sidebar"
+  },
+  "sidebar.docs.category.Appendices": {
+    "message": "Apêndices",
+    "description": "The label for the Appendices category in the sidebar"
+  }
+}

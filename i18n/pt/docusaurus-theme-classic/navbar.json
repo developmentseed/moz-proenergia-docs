@@ -1,0 +1,6 @@
+{
+  "item.label.Documentation": {
+    "message": "Documentação",
+    "description": "The label for the Documentation sidebar item in the navbar"
+  }
+}

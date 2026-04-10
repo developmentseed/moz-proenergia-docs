@@ -29,6 +29,18 @@ const config: Config = {
   i18n: {
     defaultLocale: "en",
     locales: ["en", "pt"],
+    localeConfigs: {
+      en: {
+        label: "English",
+        direction: "ltr",
+        htmlLang: "en",
+      },
+      pt: {
+        label: "Português",
+        direction: "ltr",
+        htmlLang: "pt-MZ",
+      },
+    },
   },
   onBrokenMarkdownLinks: "warn",
 
@@ -68,6 +80,10 @@ const config: Config = {
               sidebarId: "docs",
               position: "left",
               label: "Documentation",
+            },
+            {
+              type: "localeDropdown",
+              position: "right",
             },
           ],
     },
