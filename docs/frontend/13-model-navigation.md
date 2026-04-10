@@ -1,6 +1,6 @@
 ---
 sidebar_position: 13
-title: "13. Model Navigation & Scenario Selection"
+title: "Model Navigation & Scenario Selection"
 ---
 
 # 13. Model Navigation and Scenario Selection

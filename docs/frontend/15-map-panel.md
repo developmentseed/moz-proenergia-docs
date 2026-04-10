@@ -1,6 +1,6 @@
 ---
 sidebar_position: 15
-title: "15. The Map Panel"
+title: "The Map Panel"
 ---
 
 # 15. The Map Panel

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: "3. User Management"
+title: "User Management"
 ---
 
 # 3. User Management

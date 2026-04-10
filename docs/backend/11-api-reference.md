@@ -1,6 +1,6 @@
 ---
 sidebar_position: 11
-title: "11. API Reference"
+title: "API Reference"
 ---
 
 # 11. API Reference

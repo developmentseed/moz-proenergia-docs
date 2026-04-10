@@ -1,6 +1,6 @@
 ---
 sidebar_position: 16
-title: "16. The Analysis Summary Panel"
+title: "The Analysis Summary Panel"
 ---
 
 # 16. The Analysis Summary Panel

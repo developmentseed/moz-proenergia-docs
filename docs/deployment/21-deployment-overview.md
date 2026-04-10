@@ -1,6 +1,6 @@
 ---
 sidebar_position: 21
-title: "21. Deployment Overview"
+title: "Deployment Overview"
 ---
 
 # 21. Deployment Overview: Five-Script Process

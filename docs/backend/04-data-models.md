@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: "4. Data Models"
+title: "Data Models"
 ---
 
 # 4. Data Models

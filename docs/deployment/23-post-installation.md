@@ -1,6 +1,6 @@
 ---
 sidebar_position: 23
-title: "23. Post-Installation Setup"
+title: "Post-Installation Setup"
 ---
 
 # 23. Post-Installation Setup

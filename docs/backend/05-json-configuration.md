@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "5. JSON Configuration Fields"
+title: "JSON Configuration Fields"
 ---
 
 # 5. JSON Configuration Fields

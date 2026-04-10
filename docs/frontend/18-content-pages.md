@@ -1,6 +1,6 @@
 ---
 sidebar_position: 18
-title: "18. Content & Documentation Pages"
+title: "Content & Documentation Pages"
 ---
 
 # 18. Content and Documentation Pages
@@ -24,4 +24,4 @@ The correct file is served automatically based on the user's selected language.
 |---|---|---|
 | `/about` | `src/app/about/about.mdx` | `src/app/about/about.pt.mdx` |
 
-To add or update content pages, a developer must edit the `.mdx` files in the repository and redeploy. Non-developer administrators should coordinate with Development Seed for content updates.
+To add or update content pages, a developer must edit the `.mdx` files in the repository and redeploy. Non-developer administrators should coordinate with developmers for content updates.

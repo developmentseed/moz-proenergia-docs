@@ -1,6 +1,6 @@
 ---
 sidebar_position: 9
-title: "9. Reference Datasets & Reference Files"
+title: "Reference Datasets & Reference Files"
 ---
 
 # 9. Reference Datasets and Reference Files

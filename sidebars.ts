@@ -72,6 +72,7 @@ const sidebars: SidebarsConfig = {
         "appendices/b-admin-columns",
         "appendices/c-permissions",
         "appendices/d-glossary",
+        "appendices/e-language-strings",
       ],
     },
   ],

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-title: "6. Scenarios & Scenario Files"
+title: "Scenarios & Scenario Files"
 ---
 
 # 6. Scenarios and Scenario Files

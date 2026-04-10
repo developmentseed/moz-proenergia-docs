@@ -1,6 +1,6 @@
 ---
 sidebar_position: 24
-title: "24. Update Procedures"
+title: "Update Procedures"
 ---
 
 # 24. Update Procedures

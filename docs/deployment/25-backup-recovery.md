@@ -1,6 +1,6 @@
 ---
 sidebar_position: 25
-title: "25. Backup & Recovery"
+title: "Backup & Recovery"
 ---
 
 # 25. Backup and Recovery

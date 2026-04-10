@@ -1,6 +1,6 @@
 ---
 sidebar_position: 19
-title: "19. Frontend Troubleshooting"
+title: "Frontend Troubleshooting"
 ---
 
 # 19. Frontend Troubleshooting

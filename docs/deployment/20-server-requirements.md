@@ -1,6 +1,6 @@
 ---
 sidebar_position: 20
-title: "20. Server Requirements"
+title: "Server Requirements"
 ---
 
 # 20. Server Requirements and Prerequisites

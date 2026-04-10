@@ -1,6 +1,6 @@
 ---
 sidebar_position: 10
-title: "10. Monitoring & Troubleshooting"
+title: "Monitoring & Troubleshooting"
 ---
 
 # 10. Monitoring and Troubleshooting

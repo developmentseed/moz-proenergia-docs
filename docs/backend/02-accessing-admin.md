@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: "2. Accessing the Admin Interface"
+title: "Accessing the Admin Interface"
 ---
 
 # 2. Accessing the Django Admin Interface

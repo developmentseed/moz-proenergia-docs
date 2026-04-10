@@ -1,6 +1,6 @@
 ---
 sidebar_position: 22
-title: "22. Environment Configuration"
+title: "Environment Configuration"
 ---
 
 # 22. Environment Configuration

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 14
-title: "14. The Filter Panel"
+title: "The Filter Panel"
 ---
 
 # 14. The Filter Panel

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: "7. Vector Datasets & Vector Files"
+title: "Vector Datasets & Vector Files"
 ---
 
 # 7. Vector Datasets and Vector Files

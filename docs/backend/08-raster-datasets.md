@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-title: "8. Raster Datasets & Raster Files"
+title: "Raster Datasets & Raster Files"
 ---
 
 # 8. Raster Datasets and Raster Files

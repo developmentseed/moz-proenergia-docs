@@ -1,6 +1,6 @@
 ---
 sidebar_position: 26
-title: "26. Deployment Troubleshooting"
+title: "Deployment Troubleshooting"
 ---
 
 # 26. Deployment Troubleshooting
