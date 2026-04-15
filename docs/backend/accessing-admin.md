@@ -1,11 +1,10 @@
 ---
-sidebar_position: 2
 title: "Accessing the Admin Interface"
 ---
 
-# 2. Accessing the Django Admin Interface
+# Accessing the Django Admin Interface
 
-## 2.1 URL and Login
+## URL and Login
 
 The Django Admin is accessible at:
 
@@ -15,17 +14,17 @@ The Django Admin is accessible at:
 Log in with a staff or superuser account. Navigate to the login page, enter your credentials, and click **Log In**.
 
 :::note
-On a fresh deployment, a superuser must be created via the command line before anyone can log in. See Section 2.3.
+On a fresh deployment, a superuser must be created via the command line before anyone can log in. See [Creating the Initial Superuser](#creating-the-initial-superuser-cli) below.
 :::
 
-## 2.2 Admin Home Screen
+## Admin Home Screen
 
 After logging in, the admin home lists all registered model groups:
 
 - **Authentication and Authorization** — User and Group management
 - **Datasets** — DataModel, VectorDataset, VectorFile, RasterDataset, RasterFile, ReferenceDataset, ReferenceFile, Scenario, ScenarioFile
 
-## 2.3 Creating the Initial Superuser (CLI)
+## Creating the Initial Superuser (CLI)
 
 ```bash
 cd /var/www/proenergia/app

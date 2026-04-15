@@ -1,19 +1,18 @@
 ---
-sidebar_position: 8
 title: "Raster Datasets & Raster Files"
 ---
 
-# 8. Raster Datasets and Raster Files
+# Raster Datasets and Raster Files
 
 Raster Datasets store georeferenced imagery (satellite photos, terrain models, derived raster outputs). They are displayed as Cloud-Optimized GeoTIFF (COG) layers. Unlike vector data, raster files do not require PMTiles conversion — they are served directly from object storage.
 
-## 8.1 Adding a Raster Dataset
+## Adding a Raster Dataset
 
 1. Go to **Datasets → Raster Datasets → + Add Raster Dataset**.
 2. Fill in the same metadata fields as Vector Datasets (name, description, source, contact, CRS, etc.). Supports EN/PT translations.
 3. Click **Save**. Then add a Raster File.
 
-## 8.2 Adding Raster Files
+## Adding Raster Files
 
 1. Go to **Datasets → Raster Files → + Add Raster File**.
 2. Select the parent Raster Dataset.
@@ -37,6 +36,6 @@ gdalwarp <source.tif> <dest.tif> -of COG -t_srs EPSG:3857 \
 ```
 :::
 
-## 8.3 Linking Raster Datasets to Data Models
+## Linking Raster Datasets to Data Models
 
 Add a Raster Dataset to a Data Model's **Raster Layers** multi-select to make it available as an optional map layer in the explorer. Only approved Raster Datasets appear in this selector.

@@ -1,9 +1,8 @@
 ---
-sidebar_position: 5
 title: "JSON Configuration Fields"
 ---
 
-# 5. JSON Configuration Fields
+# JSON Configuration Fields
 
 Four JSON arrays on each Data Model configure frontend behaviour. The admin validates structure on save and reports errors for missing required keys or invalid values.
 
@@ -13,7 +12,7 @@ All JSON must use double quotes for keys and string values, with no trailing com
 
 ---
 
-## 5.1 `filter_fields`
+## `filter_fields`
 
 Defines the filter controls shown in the left panel. Each entry maps to one interactive filter control.
 
@@ -67,7 +66,7 @@ The frontend derives the control type at runtime from the column name and data v
 
 ---
 
-## 5.2 `popup_fields`
+## `popup_fields`
 
 Defines which attributes are displayed when a user clicks a feature on the map. Fields appear in the order listed.
 
@@ -104,7 +103,7 @@ When a user clicks a feature, the frontend calls `GET /api/v1/scenario/{id}/feat
 
 ---
 
-## 5.3 `summary_fields`
+## `summary_fields`
 
 Defines the aggregated statistics shown in the right-hand Summary panel.
 
@@ -183,7 +182,7 @@ If `method` is omitted the system defaults to `sum`. For string-type columns, th
 
 ---
 
-## 5.4 `color_coding`
+## `color_coding`
 
 Maps values of `visualization_column` to specific colours on the map. The special value `"default"` sets the fallback colour. The admin validates that each `color` is a valid hex string (3 or 6 hex digits, with or without leading `#`).
 

@@ -1,11 +1,10 @@
 ---
-sidebar_position: 3
 title: "User Management"
 ---
 
-# 3. User Management
+# User Management
 
-## 3.1 User Roles and Permissions
+## User Roles and Permissions
 
 | Permission | User | Admin | Super Admin |
 |------------|:----:|:-----:|:-----------:|
@@ -33,14 +32,14 @@ title: "User Management"
 | `is_staff = True`, `is_superuser = False` | Admin — can access admin, manage their own datasets and scenarios. Cannot manage users or publish datasets. |
 | `is_staff = True`, `is_superuser = True` | Super Admin — bypasses all permission checks. Full access to everything. |
 
-## 3.2 Creating a New User
+## Creating a New User
 
 1. Go to **Authentication and Authorization → Users → + Add User**.
 2. Enter a username and password, then click **Save and continue editing**.
 3. Fill in personal information (first name, last name, email).
-4. Set the appropriate permission level (see Section 3.3). Click **Save**.
+4. Set the appropriate permission level (see the role table below). Click **Save**.
 
-## 3.3 Setting a User's Role
+## Setting a User's Role
 
 | Checkbox | Effect |
 |---|---|
@@ -52,7 +51,7 @@ title: "User Management"
 - **Admin:** Check Staff status only. Optionally assign specific model-level permissions.
 - **Super Admin:** Check both Staff status and Superuser status.
 
-## 3.4 Assigning Specific Permissions to Admin Users
+## Assigning Specific Permissions to Admin Users
 
 In the **User Permissions** multi-select, grant:
 
@@ -68,6 +67,6 @@ In the **User Permissions** multi-select, grant:
 Super Admin accounts bypass all granular permission checks. Specific permissions only need to be set for staff-level Admin accounts.
 :::
 
-## 3.5 Editing and Deactivating Users
+## Editing and Deactivating Users
 
 Go to **Authentication and Authorization → Users** and click a username to edit. To deactivate without deleting, uncheck the **Active** checkbox and click **Save**.

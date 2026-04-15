@@ -1,11 +1,10 @@
 ---
-sidebar_position: 23
 title: "Post-Installation Setup"
 ---
 
-# 23. Post-Installation Setup
+# Post-Installation Setup
 
-## 23.1 Create Django Admin Superuser
+## Create Django Admin Superuser
 
 ```bash
 cd /var/www/proenergia/app
@@ -13,7 +12,7 @@ source venv/bin/activate
 python manage.py createsuperuser
 ```
 
-## 23.2 Configure GitHub Webhook (Optional)
+## Configure GitHub Webhook (Optional)
 
 Script `03` generates a webhook secret displayed at the end of its output (also saved to `/var/www/proenergia/webhook_secret.txt`).
 
@@ -23,7 +22,7 @@ Script `03` generates a webhook secret displayed at the end of its output (also 
 4. Paste the webhook secret into the **Secret** field.
 5. Select **Just the push event**. Click **Add webhook**.
 
-## 23.3 systemd Services
+## systemd Services
 
 | Service | Purpose |
 |---|---|

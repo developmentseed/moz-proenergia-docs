@@ -25,6 +25,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         "backend/accessing-admin",
+        "backend/workflows",
         "backend/user-management",
         "backend/data-models",
         "backend/json-configuration",
@@ -48,6 +49,7 @@ const sidebars: SidebarsConfig = {
         "frontend/summary-panel",
         "frontend/downloads",
         "frontend/content-pages",
+        "frontend/configuration",
         "frontend/troubleshooting",
       ],
     },

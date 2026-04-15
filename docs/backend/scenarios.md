@@ -1,21 +1,20 @@
 ---
-sidebar_position: 6
 title: "Scenarios & Scenario Files"
 ---
 
-# 6. Scenarios and Scenario Files
+# Scenarios and Scenario Files
 
-## 6.1 What Is a Scenario?
+## What Is a Scenario?
 
 A Scenario represents a specific model run within a Data Model — for example, *Baseline 2025* or *Accelerated Grid Expansion 2035*. Each Scenario links to a Vector Dataset for spatial geometry and holds analysis results via one or more Scenario Files (CSV).
 
-## 6.2 Adding a New Scenario
+## Adding a New Scenario
 
 1. Go to **Datasets → Scenarios → + Add Scenario**.
-2. Fill in the fields (see Section 6.3).
+2. Fill in the fields (see the fields table below).
 3. Click **Save**. You can then add Scenario Files.
 
-## 6.3 Scenario Fields Reference
+## Scenario Fields Reference
 
 | Field | Description |
 |---|---|
@@ -28,21 +27,21 @@ A Scenario represents a specific model run within a Data Model — for example, 
 A single Vector Dataset can be shared across multiple Scenarios. Scenarios are ordered in the dropdown by Presentation Order, then by ID.
 :::
 
-## 6.4 Adding Scenario Files
+## Adding Scenario Files
 
 A Scenario File is a CSV containing analysis result data. Each row corresponds to a spatial feature identified by a numeric `id` column. Uploading triggers a Celery task that merges the CSV with vector geometry to generate a PMTiles map layer, then imports the CSV into the database for summary queries.
 
 1. Go to **Datasets → Scenario Files → + Add Scenario File**.
 2. Select the parent Scenario.
 3. Upload a CSV file. The CSV **must include an `id` column** matching feature IDs in the linked Vector Dataset.
-4. Optionally tick **Represent features as points in lower zoom levels** (see Section 6.5).
+4. Optionally tick **Represent features as points in lower zoom levels** (see [Low Zoom as Points](#low-zoom-as-points-option) below).
 5. Click **Save**.
 
 :::note CSV format
 Delimiter is auto-detected (comma or semicolon). Numeric strings are automatically converted to numbers; all other values are stored as strings. The `id` column is used as the join key and is not stored as metadata. Files with UTF-8 BOM are handled correctly.
 :::
 
-## 6.5 Low Zoom as Points Option
+## Low Zoom as Points Option
 
 The **Represent features as points in lower zoom levels** checkbox (`low_zoom_as_points`) optimises rendering for large polygon datasets.
 
@@ -55,11 +54,11 @@ When enabled, the pipeline generates:
 Recommended for large datasets (10,000+ features) composed of uniform square polygons. Not necessary for point or line data.
 :::
 
-## 6.6 Scenario File Status Indicator
+## Scenario File Status Indicator
 
 The Scenario Files list includes an **Is Active** column indicating whether a file is the currently active (latest Ready) file for its scenario. Only the most recently processed Ready file is active.
 
-## 6.7 Monitoring Scenario File Processing
+## Monitoring Scenario File Processing
 
 Status progresses: `Created → Processing → Ready` (or `Error`).
 

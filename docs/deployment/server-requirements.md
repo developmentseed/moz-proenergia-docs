@@ -1,9 +1,8 @@
 ---
-sidebar_position: 20
 title: "Server Requirements"
 ---
 
-# 20. Server Requirements and Prerequisites
+# Server Requirements and Prerequisites
 
 **OS:** Ubuntu 24.04 LTS (recommended). Minimum 4 GB RAM; 16 GB+ recommended for production.
 

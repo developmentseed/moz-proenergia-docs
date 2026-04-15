@@ -1,11 +1,10 @@
 ---
-sidebar_position: 15
 title: "The Map Panel"
 ---
 
-# 15. The Map Panel
+# The Map Panel
 
-## 15.1 Map Controls and Navigation
+## Map Controls and Navigation
 
 | Control | Description |
 |---|---|
@@ -15,7 +14,7 @@ title: "The Map Panel"
 | **Geocoder (address search)** | Search bar in the top-left. Search for place names via OpenStreetMap Nominatim. Matching locations are shown with a marker. |
 | **Share button** | Copies the current page URL (including all active filters and scenario) to the clipboard for sharing. |
 
-## 15.2 Map Controls Toolbar
+## Map Controls Toolbar
 
 | Control | Description |
 |---|---|
@@ -25,7 +24,7 @@ title: "The Map Panel"
 | **Contextual layer panel** | Toggle individual vector layers (from Data Model's Contextual Layers) on/off. |
 | **Raster layer panel** | Toggle individual raster layers (from Data Model's Raster Layers) on/off as additional map overlays. |
 
-## 15.3 Feature Interaction
+## Feature Interaction
 
 Clicking a feature on the map switches the right-hand panel to **feature detail mode**, showing the attributes configured in `popup_fields`.
 
