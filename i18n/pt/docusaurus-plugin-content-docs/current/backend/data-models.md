@@ -13,7 +13,7 @@ Um Modelo de Dados representa uma categoria de planeamento ou análise — como 
 1. Vá a **Conjuntos de Dados → Modelos de Dados → + Adicionar Modelo de Dados**.
 2. Preencha os campos de nível superior (consulte a tabela de campos abaixo).
 3. Adicione a configuração JSON para `filter_fields`, `popup_fields`, `summary_fields` e `color_coding` (consulte [Campos de Configuração JSON](./json-configuration)).
-4. Clique em **Guardar**, ou **Guardar e continuar a editar**.
+4. Clique em **Gravar**, ou **Guardar e continuar a editar**.
 
 ## Referência dos Campos do Modelo de Dados
 

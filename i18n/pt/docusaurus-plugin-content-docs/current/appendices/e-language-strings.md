@@ -179,7 +179,7 @@ t(`model.${model.id}.name`, { defaultValue: model.name })
 2. Navegue até ao registo relevante (ex. Conjuntos de Dados → Modelos de Dados → seleccione o modelo).
 3. Clique no separador de idioma (EN / PT) acima do campo Nome ou Descrição.
 4. Introduza ou actualize a tradução no separador português.
-5. Clique em **Guardar**.
+5. Clique em **Gravar**.
 
 A alteração reflecte-se no frontend no próximo carregamento de página (ou após a expiração da cache da API).
 

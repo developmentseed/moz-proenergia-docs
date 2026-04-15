@@ -16,7 +16,7 @@ Reference Datasets store non-spatial supporting documents and tabular files — 
 
 1. Go to **Datasets → Reference Files → + Add Reference File**.
 2. Select the parent Reference Dataset.
-3. Upload a file. Accepted formats: `.pdf`, `.csv`, `.xlsx`, `.xls`, `.docx`, `.doc`.
+3. Upload a file. Accepted formats: `.pdf` and `.csv`.
 4. Click **Save**.
 
 ## Linking Reference Datasets to Data Models

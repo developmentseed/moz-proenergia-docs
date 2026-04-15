@@ -10,8 +10,8 @@ title: "Apêndice A — Esqueletos JSON"
 ```json
 [
   {
-    "label":          "Rótulo legível por humanos",
-    "description":    "Texto de dica (ou string vazia)",
+    "label":          "Rótulo em inglês",
+    "description":    "Descrição em inglês",
     "column":         "Nome_Coluna_CSV",
     "label_pt":       "Rótulo em Português",
     "description_pt": "Descrição em Português"
@@ -24,8 +24,8 @@ title: "Apêndice A — Esqueletos JSON"
 ```json
 [
   {
-    "label":          "Rótulo legível por humanos",
-    "description":    "Texto de dica (ou string vazia)",
+    "label":          "Rótulo em inglês",
+    "description":    "Descrição em inglês",
     "column":         "Nome_Coluna_CSV",
     "label_pt":       "Rótulo em Português",
     "description_pt": "Descrição em Português"
@@ -44,7 +44,7 @@ title: "Apêndice A — Esqueletos JSON"
     "method":              "sum",
     "unit":                "USD",
     "group_by":            "OutraColuna",
-    "category":            "Cabeçalho de Secção",
+    "category":            "Categoria",
     "chartType":           "bar",
     "colors":              { "Valor": "#HEX" },
     "hasDecimal":          false,

@@ -4,7 +4,7 @@ title: "Raster Datasets & Raster Files"
 
 # Raster Datasets and Raster Files
 
-Raster Datasets store georeferenced imagery (satellite photos, terrain models, derived raster outputs). They are displayed as Cloud-Optimized GeoTIFF (COG) layers. Unlike vector data, raster files do not require PMTiles conversion — they are served directly from object storage.
+Raster Datasets store georeferenced imagery (satellite photos, terrain models, derived raster outputs). The application support displaying Cloud-Optimized GeoTIFF (COG) layers. Unlike vector data, raster files do not require PMTiles conversion — they are served directly from the file storage.
 
 ## Adding a Raster Dataset
 

@@ -12,7 +12,7 @@ Um Conjunto de Dados Vectorial é um contentor nomeado para geometria espacial �
 
 1. Vá a **Conjuntos de Dados → Conjuntos de Dados Vectoriais → + Adicionar Conjunto de Dados Vectorial**.
 2. Preencha os campos de metadados (consulte a tabela de campos abaixo).
-3. Clique em **Guardar**. Em seguida, pode carregar Ficheiros Vectoriais.
+3. Clique em **Gravar**. Em seguida, pode carregar Ficheiros Vectoriais.
 
 ## Referência dos Campos do Conjunto de Dados Vectorial
 
@@ -42,12 +42,12 @@ O carregamento desencadeia uma tarefa Celery: ficheiro → FlatGeobuf (GDAL) →
 
 | Formato | Notas |
 |---|---|
-| `.geojson` | GeoJSON. Deve usar WGS84 (EPSG:4326). Formato preferido. |
-| `.gpkg` | GeoPackage. Totalmente suportado. |
-| `.zip` | Arquivo ZIP contendo um Shapefile (`.shp`, `.shx`, `.dbf`, `.prj`). |
-| `.kml` | Keyhole Markup Language. Totalmente suportado. |
+| `.geojson` | GeoJSON. Deve usar WGS84 (EPSG:4326). |
+| `.gpkg` | GeoPackage. |
+| `.zip` | Ficheiro ZIP contendo um Shapefile (`.shp`, `.shx`, `.dbf`, `.prj`). |
+| `.kml` | Keyhole Markup Language. |
 
-4. Clique em **Guardar**. O processamento começa automaticamente.
+4. Clique em **Gravar**. O processamento começa automaticamente.
 
 ## Monitorizar o Processamento de Ficheiros
 

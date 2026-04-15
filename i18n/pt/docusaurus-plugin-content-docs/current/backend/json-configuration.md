@@ -4,7 +4,7 @@ title: "Campos de Configuração JSON"
 
 # Campos de Configuração JSON
 
-Quatro arrays JSON em cada Modelo de Dados configuram o comportamento do frontend. O painel de administração valida a estrutura ao guardar e reporta erros para chaves obrigatórias em falta ou valores inválidos.
+Quatro arrays JSON em cada Modelo de Dados configuram o comportamento do frontend. O painel de administração valida a estrutura ao guardar os dados e reporta erros para chaves obrigatórias em falta ou valores inválidos.
 
 :::note
 Todo o JSON deve utilizar aspas duplas para chaves e valores de string, sem vírgulas no final. Os arrays devem estar envolvidos em `[ ]`.
@@ -14,17 +14,17 @@ Todo o JSON deve utilizar aspas duplas para chaves e valores de string, sem vír
 
 ## `filter_fields`
 
-Define os controlos de filtro apresentados no painel esquerdo. Cada entrada mapeia para um controlo de filtro interactivo.
+Define os controlos de filtro apresentados no painel esquerdo do sítio web da aplicação. Cada entrada define um controlo de filtro interactivo.
 
 ### Esquema
 
 | Chave | Tipo | Obrigatório? | Descrição |
 |---|---|---|---|
 | `label` | string | **obrigatório** | Rótulo legível por humanos apresentado acima do controlo de filtro. |
-| `description` | string | **obrigatório** | Texto de dica. Pode ser uma string vazia. |
-| `column` | string | **obrigatório** | Nome exacto da coluna no CSV do cenário. **Sensível a maiúsculas/minúsculas.** |
-| `label_pt` | string | opcional | Tradução portuguesa do rótulo. |
-| `description_pt` | string | opcional | Tradução portuguesa da descrição. |
+| `description` | string | **obrigatório** | Descrição. Pode ser uma string vazia. |
+| `column` | string | **obrigatório** | Nome exacto da coluna no ficheiro CSV do cenário. **Sensível a maiúsculas/minúsculas.** |
+| `label_pt` | string | opcional | Rótulo em português. |
+| `description_pt` | string | opcional | Descrição em português. |
 
 ### Como o tipo de filtro é determinado
 
@@ -75,10 +75,10 @@ Define quais os atributos apresentados quando um utilizador clica numa caracter�
 | Chave | Tipo | Obrigatório? | Descrição |
 |---|---|---|---|
 | `label` | string | **obrigatório** | Rótulo de apresentação para o atributo. |
-| `description` | string | **obrigatório** | Texto de dica. Pode ser uma string vazia. |
+| `description` | string | **obrigatório** | Descrição. Pode ser uma string vazia. |
 | `column` | string | **obrigatório** | Nome exacto da coluna CSV. **Sensível a maiúsculas/minúsculas.** |
-| `label_pt` | string | opcional | Tradução portuguesa do rótulo. |
-| `description_pt` | string | opcional | Tradução portuguesa da descrição. |
+| `label_pt` | string | opcional | Rótulo em português. |
+| `description_pt` | string | opcional | Descrição em português. |
 
 :::note
 Quando um utilizador clica numa característica, o frontend chama `GET /api/v1/scenario/{id}/feature/{feature_id}/` e mostra apenas as colunas listadas aqui, por ordem.
@@ -123,8 +123,8 @@ Define as estatísticas agregadas apresentadas no painel de Resumo do lado direi
 | `hasDecimal` | booleano | opcional | Se `true`, os valores são apresentados com casas decimais. Deve ser exactamente `true` ou `false`. |
 | `showChartValueRows` | booleano | opcional | Se `true`, mostra uma tabela de valores brutos abaixo do gráfico. |
 | `showBarChartAverage` | booleano | opcional | Se `true`, sobrepõe uma linha de média nos gráficos de barras. |
-| `label_pt` | string | opcional | Tradução portuguesa do rótulo. |
-| `description_pt` | string | opcional | Tradução portuguesa da descrição. |
+| `label_pt` | string | opcional | Rótulo em português. |
+| `description_pt` | string | opcional | Descrição em português. |
 
 :::note
 Se `method` for omitido, o sistema usa `sum` por omissão. Para colunas do tipo string, o frontend usa sempre `count` independentemente da definição do método.
@@ -184,14 +184,14 @@ Se `method` for omitido, o sistema usa `sum` por omissão. Para colunas do tipo 
 
 ## `color_coding`
 
-Mapeia valores de `visualization_column` para cores específicas no mapa. O valor especial `"default"` define a cor de recuo. O painel de administração valida que cada `color` é uma string hexadecimal válida (3 ou 6 dígitos hexadecimais, com ou sem `#` inicial).
+Mapeia valores de `visualization_column` para cores específicas no mapa. O valor especial `"default"` define a cor de recuo. O painel de administração valida que cada `color` seja uma string hexadecimal válida (3 ou 6 dígitos hexadecimais, com ou sem `#` inicial).
 
 ### Esquema
 
 | Chave | Tipo | Obrigatório? | Descrição |
 |---|---|---|---|
-| `value` | string | **obrigatório** | O valor da coluna a corresponder. Use `"default"` como recuo geral. |
-| `color` | string | **obrigatório** | String de cor hexadecimal válida. Ex. `"#E74C3C"` ou `"E74C3C"`. Validada pelo painel de administração. |
+| `value` | string | **obrigatório** | O valor da coluna a corresponder. O valor `"default"` será utilizado em caso de erro ou de um valor faltante. |
+| `color` | string | **obrigatório** | String de cor hexadecimal válida. Ex. `"#E74C3C"` ou `"E74C3C"`. |
 
 ### Exemplo
 

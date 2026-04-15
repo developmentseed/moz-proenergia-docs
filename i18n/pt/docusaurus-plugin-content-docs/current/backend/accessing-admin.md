@@ -11,10 +11,10 @@ O Painel de Administração Django está acessível em:
 - **Produção:** `https://<domínio-de-implantação>/admin/`
 - **Desenvolvimento local:** `http://localhost:8000/admin/`
 
-Inicie sessão com uma conta de pessoal ou superutilizador. Navegue até à página de início de sessão, introduza as suas credenciais e clique em **Iniciar Sessão**.
+Inicie sessão com uma conta de status de equipa ou superuser. Navegue até à página de início de sessão, introduza as suas credenciais e clique em **Iniciar Sessão**.
 
 :::note
-Numa implantação nova, é necessário criar um superutilizador através da linha de comandos antes de qualquer pessoa poder iniciar sessão. Consulte [Criar o Superutilizador Inicial](#criar-o-superutilizador-inicial-cli) abaixo.
+Numa implantação nova, é necessário criar um utilizador com status de superuser através da linha de comandos antes de qualquer pessoa poder iniciar sessão. Consulte [Criar o Superutilizador Inicial](#criar-o-superutilizador-inicial-cli) abaixo.
 :::
 
 ## Ecrã Inicial do Painel de Administração
@@ -33,5 +33,5 @@ python manage.py createsuperuser
 ```
 
 :::note
-As contas de superutilizador devem ser restritas a um pequeno número de administradores de confiança. Utilize contas de Administrador ao nível de pessoal para a gestão do dia-a-dia.
+As contas de superutilizador devem ser restritas a um pequeno número de administradores de confiança. Utilize contas de Administrador ao nível de status de equipa para a gestão do dia-a-dia.
 :::

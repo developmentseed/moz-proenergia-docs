@@ -10,9 +10,9 @@ Um Cenário representa uma execução específica de modelo dentro de um Modelo 
 
 ## Adicionar um Novo Cenário
 
-1. Vá a **Conjuntos de Dados → Cenários → + Adicionar Cenário**.
+1. Vá a **Datasets → Cenários → + Adicionar Cenário**.
 2. Preencha os campos (consulte a tabela de campos abaixo).
-3. Clique em **Guardar**. Em seguida, pode adicionar Ficheiros de Cenário.
+3. Clique em **Gravar**. Em seguida, pode adicionar Ficheiros de Cenário.
 
 ## Referência dos Campos do Cenário
 
@@ -35,7 +35,7 @@ Um Ficheiro de Cenário é um CSV contendo dados de resultados de análise. Cada
 2. Seleccione o Cenário pai.
 3. Carregue um ficheiro CSV. O CSV **deve incluir uma coluna `id`** correspondente aos IDs de características no Conjunto de Dados Vectorial ligado.
 4. Opcionalmente, marque **Representar características como pontos em níveis de zoom inferiores** (consulte [Opção de Zoom Baixo como Pontos](#opção-de-zoom-baixo-como-pontos) abaixo).
-5. Clique em **Guardar**.
+5. Clique em **Gravar**.
 
 :::note Formato CSV
 O delimitador é detectado automaticamente (vírgula ou ponto e vírgula). As strings numéricas são automaticamente convertidas para números; todos os outros valores são armazenados como strings. A coluna `id` é usada como chave de junção e não é armazenada como metadados. Os ficheiros com BOM UTF-8 são tratados correctamente.

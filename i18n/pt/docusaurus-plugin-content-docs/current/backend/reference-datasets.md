@@ -8,16 +8,16 @@ Os Conjuntos de Dados de Referência armazenam documentos de suporte não espaci
 
 ## Adicionar um Conjunto de Dados de Referência
 
-1. Vá a **Conjuntos de Dados → Conjuntos de Dados de Referência → + Adicionar Conjunto de Dados de Referência**.
+1. Vá a **Datasets → Datasets de Referência → + Adicionar Dataset de Referência**.
 2. Preencha os campos de metadados (nome, descrição, fonte, contacto, etc.). Suporta traduções EN/PT.
-3. Clique em **Guardar**. Em seguida, adicione Ficheiros de Referência.
+3. Clique em **Gravar**. Em seguida, adicione um Ficheiro de Referência.
 
 ## Adicionar Ficheiros de Referência
 
-1. Vá a **Conjuntos de Dados → Ficheiros de Referência → + Adicionar Ficheiro de Referência**.
-2. Seleccione o Conjunto de Dados de Referência pai.
-3. Carregue um ficheiro. Formatos aceites: `.pdf`, `.csv`, `.xlsx`, `.xls`, `.docx`, `.doc`.
-4. Clique em **Guardar**.
+1. Vá a **Datasets → Ficheiro de Referência → + Adicionar Ficheiro de Referência**.
+2. Seleccione o Dataset de Referência.
+3. Carregue um ficheiro. Formatos aceitos: `.pdf` e `.csv`.
+4. Clique em **Gravar**.
 
 ## Ligar Conjuntos de Dados de Referência a Modelos de Dados
 

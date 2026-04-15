@@ -10,26 +10,26 @@ As secções deste guia abordam cada componente da plataforma de forma independe
 
 ## Adicionar um Novo Modelo de Dados
 
-Um Modelo de Dados é o contentor de nível superior para uma categoria de análise de planeamento. Cada Modelo de Dados requer um Conjunto de Dados Vectorial como unidade base de análise — o Conjunto de Dados Vectorial fornece as características geográficas (assentamentos, linhas de rede, polígonos) às quais os dados do seu cenário serão associados.
+Um Modelo de Dados é o contentor de nível superior para uma categoria de análise de planeamento. Cada Modelo de Dados requer um Dataset Vetorial como unidade base de análise — o Dataset Vetorial fornece as características geográficas (assentamentos, linhas de rede, polígonos) às quais os dados do seu cenário serão associados.
 
-:::note O que é um Conjunto de Dados Vectorial?
-Um Conjunto de Dados Vectorial é um contentor nomeado para geometria espacial — a colecção de pontos, linhas ou polígonos que são renderizados no mapa. Armazena um ou mais ficheiros geoespaciais carregados (.geojson, .gpkg, .zip, .kml) e converte-os em PMTiles optimizados para entrega de mapa. Pense nele como a "camada de mapa base" à qual todos os dados de cenários são associados.
+:::note O que é um Dataset Vetorial?
+Um Dataset Vetorial é um contentor nomeado para geometria espacial — a colecção de pontos, linhas ou polígonos que são renderizados no mapa. Armazena um ou mais ficheiros geoespaciais carregados (.geojson, .gpkg, .zip, .kml) e converte-os em PMTiles optimizados para entrega de mapa. Pense nele como a "camada de mapa base" à qual todos os dados de cenários são associados.
 :::
 
-### Passo 1 — Preparar um Conjunto de Dados Vectorial
+### Passo 1 — Preparar um Dataset Vetorial
 
-Antes de criar um Modelo de Dados, precisa de um Conjunto de Dados Vectorial com pelo menos um ficheiro em estado **Pronto**.
+Antes de criar um Modelo de Dados, precisa de um Dataset Vetorial com pelo menos um ficheiro em estado **Pronto**.
 
-- **Usar um conjunto de dados existente:** Vá a Conjuntos de Dados → Conjuntos de Dados Vectoriais e confirme que o conjunto de dados que pretende tem um ficheiro Pronto. Se tiver, avance para o Passo 2.
-- **Criar um novo conjunto de dados:** Consulte [Conjuntos de Dados Vectoriais e Ficheiros Vectoriais](./vector-datasets). Em resumo:
-  1. Vá a Conjuntos de Dados → Conjuntos de Dados Vectoriais → + Adicionar Conjunto de Dados Vectorial.
+- **Usar um dataset existente:** Vá a Datasets → Datasets Vetoriais e confirme que o conjunto de dados que pretende tem um ficheiro Pronto. Se tiver, avance para o Passo 2.
+- **Criar um novo dataset:** Consulte [Datasets Vectoriais e Ficheiros Vectoriais](./vector-datasets). Em resumo:
+  1. Vá a Datasets → Datasets Vectoriais → + Adicionar Dataset Vetorial.
   2. Preencha o nome e os campos de metadados. Clique em Guardar.
-  3. Vá a Conjuntos de Dados → Ficheiros Vectoriais → + Adicionar Ficheiro Vectorial. Seleccione o seu novo conjunto de dados, carregue o ficheiro geoespacial e clique em Guardar.
+  3. Vá a Datasets → Ficheiros Vectoriais → + Adicionar Ficheiro Vetorial. Seleccione o seu novo conjunto de dados, carregue o ficheiro geoespacial e clique em Guardar.
   4. Aguarde que o processamento em segundo plano conclua — o estado do ficheiro deve atingir **Pronto** antes de poder continuar. Actualize a lista de Ficheiros Vectoriais para verificar.
 
 ### Passo 2 — Criar a Configuração do Modelo de Dados
 
-Vá a Conjuntos de Dados → Modelos de Dados → + Adicionar Modelo de Dados.
+Vá a Datasets → Modelos de Dados → + Adicionar Modelo de Dados.
 
 Preencha o nome, a descrição e a ordem de apresentação. Depois configure os quatro campos JSON:
 
@@ -48,25 +48,25 @@ Clique em Guardar.
 
 ### Passo 3 — Criar o Cenário
 
-Vá a Conjuntos de Dados → Cenários → + Adicionar Cenário.
+Vá a Datasets → Cenários → + Adicionar Cenário.
 
 - Defina o **Nome** como um rótulo descritivo (aparece no menu suspenso de cenários do frontend).
 - Defina o **Modelo** para o Modelo de Dados que acabou de criar.
-- Defina o **Conjunto de Dados Vectorial** para o conjunto de dados do Passo 1.
+- Defina o **Dataset Vetorial** para o conjunto de dados do Passo 1.
 - Defina a **Ordem de Apresentação** se tiver múltiplos cenários e quiser controlar a sua ordem no menu suspenso.
 
 Clique em Guardar.
 
 ### Passo 4 — Carregar o Ficheiro de Cenário
 
-Vá a Conjuntos de Dados → Ficheiros de Cenário → + Adicionar Ficheiro de Cenário.
+Vá a Datasets → Ficheiros de Cenário → + Adicionar Ficheiro de Cenário.
 
 Seleccione o seu novo Cenário no menu suspenso e, em seguida, carregue o seu ficheiro CSV.
 
 :::note Requisitos do CSV
 - **Formato:** Apenas CSV. O delimitador é detectado automaticamente (vírgula ou ponto e vírgula).
 - **Codificação:** UTF-8. Use UTF-8 com BOM se os seus dados contiverem caracteres especiais (letras acentuadas, etc.).
-- **Coluna obrigatória:** O ficheiro deve conter uma coluna `id` cujos valores correspondam aos IDs de características no Conjunto de Dados Vectorial ligado.
+- **Coluna obrigatória:** O ficheiro deve conter uma coluna `id` cujos valores correspondam aos IDs de características no Dataset Vetorial ligado.
 - **Sem IDs duplicados:** Cada valor de `id` deve aparecer apenas uma vez.
 - **Completude de colunas:** O ficheiro deve conter todas as colunas referenciadas na configuração `filter_fields`, `popup_fields` e `summary_fields` do Modelo de Dados.
 :::
@@ -93,16 +93,16 @@ Se o painel de resumo mostrar todos os zeros, o campo `metric_field_types` no Mo
 
 Use este fluxo de trabalho quando um Modelo de Dados já existe e quer adicionar uma nova execução de cenário (por ex. um novo ano, uma suposição de procura diferente, ou resultados de modelo actualizados).
 
-### Passo 1 — Confirmar o Conjunto de Dados Vectorial
+### Passo 1 — Confirmar o Dataset Vetorial
 
-Identifique qual Conjunto de Dados Vectorial o novo cenário deve usar. Deve ter um ficheiro em estado **Pronto**. Pode reutilizar o mesmo Conjunto de Dados Vectorial de um cenário existente neste modelo — os cenários partilham geometria.
+Identifique qual Dataset Vetorial o novo cenário deve usar. Deve ter um ficheiro em estado **Pronto**. Pode reutilizar o mesmo Dataset Vetorial de um cenário existente neste modelo — os cenários partilham geometria.
 
 ### Passo 2 — Criar o Cenário
 
-Vá a Conjuntos de Dados → Cenários → + Adicionar Cenário.
+Vá a Datasets → Cenários → + Adicionar Cenário.
 
 - Defina o **Modelo** para o Modelo de Dados existente.
-- Defina o **Conjunto de Dados Vectorial** para o conjunto de dados adequado.
+- Defina o **Dataset Vetorial** para o conjunto de dados adequado.
 - Defina o **Nome** e a **Ordem de Apresentação**.
 
 Clique em Guardar.
@@ -135,7 +135,7 @@ Se actualizar a configuração `filter_fields`, `popup_fields` ou `summary_field
 
 Os PMTiles são gerados a partir de uma combinação da geometria vectorial e apenas as colunas listadas em `filter_fields` (mais o `visualization_column`). Se adicionar uma nova coluna de filtro, os PMTiles existentes não a conterão e a filtragem ao nível do mapa não funcionará correctamente.
 
-1. Vá a Conjuntos de Dados → Ficheiros de Cenário.
+1. Vá a Datasets → Ficheiros de Cenário.
 2. Seleccione o(s) Ficheiro(s) de Cenário afectado(s) usando as caixas de verificação.
 3. No menu suspenso **Acções**, seleccione **Reprocessar ficheiros** e clique em Ir.
 4. Aguarde que o estado retorne a **Pronto**.
@@ -161,7 +161,7 @@ Substitua `<scenario_id>` pelo ID numérico do cenário (visível no URL quando 
 O comando irá limpar as métricas existentes para esse cenário e re-extrair todos os campos configurados dos dados CSV armazenados. Também actualiza o mapeamento `metric_field_types` no Modelo de Dados, que é necessário para a API de resumos reconhecer novos tipos de colunas.
 
 :::tip Encontrar o ID do cenário
-Vá a Conjuntos de Dados → Cenários e clique no nome do cenário. O ID aparece no URL do navegador: `/admin/datasets/scenario/<id>/change/`.
+Vá a Datasets → Cenários e clique no nome do cenário. O ID aparece no URL do navegador: `/admin/datasets/scenario/<id>/change/`.
 :::
 
 ### Reprocessar ambos

@@ -37,7 +37,7 @@ title: "Gestão de Utilizadores"
 1. Vá a **Autenticação e Autorização → Utilizadores → + Adicionar Utilizador**.
 2. Introduza um nome de utilizador e palavra-passe, depois clique em **Guardar e continuar a editar**.
 3. Preencha as informações pessoais (nome próprio, apelido, correio electrónico).
-4. Defina o nível de permissão adequado (consulte a tabela de funções abaixo). Clique em **Guardar**.
+4. Defina o nível de permissão adequado (consulte a tabela de funções abaixo). Clique em **Gravar**.
 
 ## Definir a Função de um Utilizador
 
@@ -69,4 +69,4 @@ As contas de Super Administrador ignoram todas as verificações de permissão g
 
 ## Editar e Desactivar Utilizadores
 
-Vá a **Autenticação e Autorização → Utilizadores** e clique num nome de utilizador para editar. Para desactivar sem eliminar, desmarque a caixa de verificação **Activo** e clique em **Guardar**.
+Vá a **Autenticação e Autorização → Utilizadores** e clique num nome de utilizador para editar. Para desactivar sem eliminar, desmarque a caixa de verificação **Activo** e clique em **Gravar**.
