@@ -1,15 +1,14 @@
 ---
-sidebar_position: 16
 title: "The Analysis Summary Panel"
 ---
 
-# 16. The Analysis Summary Panel
+# The Analysis Summary Panel
 
-## 16.1 Overview
+## Overview
 
 The Analysis Summary Panel displays aggregated statistics that update in real time when filters are applied. All statistics correspond to entries in the Data Model's `summary_fields` configuration.
 
-## 16.2 Statistics Display Formats
+## Statistics Display Formats
 
 | Display type | When shown |
 |---|---|
@@ -20,6 +19,6 @@ The Analysis Summary Panel displays aggregated statistics that update in real ti
 | **Multi-column group** | `columns` has multiple entries. Each column is a sub-row aggregated by `method`. |
 | **Nested group** | `group_by` set to two columns. Shows a two-level grouped breakdown. |
 
-## 16.3 Summary Categories
+## Summary Categories
 
 Items sharing the same `category` value are grouped under a collapsible heading in the summary panel.

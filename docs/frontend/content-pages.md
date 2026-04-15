@@ -1,11 +1,10 @@
 ---
-sidebar_position: 18
 title: "Content & Documentation Pages"
 ---
 
-# 18. Content and Documentation Pages
+# Content and Documentation Pages
 
-## 18.1 MDX-Based Content System
+## MDX-Based Content System
 
 The platform includes static documentation pages authored in **MDX** (Markdown with embedded React components). These pages support bilingual content via locale-specific MDX files.
 

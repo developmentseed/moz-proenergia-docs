@@ -1,9 +1,8 @@
 ---
-sidebar_position: 17
 title: "Downloads"
 ---
 
-# 17. Downloads
+# Downloads
 
 The Downloads page (accessible from the header navigation) lists all Vector Datasets, Raster Datasets, and Reference Datasets you have access to. Unauthenticated users see only public, approved datasets on the layers panel of each model.
 

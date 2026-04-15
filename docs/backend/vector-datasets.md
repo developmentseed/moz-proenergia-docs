@@ -1,21 +1,20 @@
 ---
-sidebar_position: 7
 title: "Vector Datasets & Vector Files"
 ---
 
-# 7. Vector Datasets and Vector Files
+# Vector Datasets and Vector Files
 
-## 7.1 What Is a Vector Dataset?
+## What Is a Vector Dataset?
 
 A Vector Dataset is a named container for spatial geometry — the collection of points, lines, or polygons rendered on the map. Scenarios reference a Vector Dataset to obtain their spatial geometry.
 
-## 7.2 Adding a New Vector Dataset
+## Adding a New Vector Dataset
 
 1. Go to **Datasets → Vector Datasets → + Add Vector Dataset**.
-2. Fill in the metadata fields (see Section 7.3).
+2. Fill in the metadata fields (see the fields table below).
 3. Click **Save**. You can then upload Vector Files.
 
-## 7.3 Vector Dataset Fields Reference
+## Vector Dataset Fields Reference
 
 | Field | Description |
 |---|---|
@@ -33,7 +32,7 @@ A Vector Dataset is a named container for spatial geometry — the collection of
 | **Is Public** | Superuser only. If ticked, dataset visible to unauthenticated users. |
 | **Is Approved** | Superuser only. Must be approved before the dataset can be used in Scenarios or shown on the frontend. |
 
-## 7.4 Adding Vector Files
+## Adding Vector Files
 
 Uploading triggers a Celery task: file → FlatGeobuf (GDAL) → PMTiles (Tippecanoe).
 
@@ -50,11 +49,11 @@ Uploading triggers a Celery task: file → FlatGeobuf (GDAL) → PMTiles (Tippec
 
 4. Click **Save**. Processing begins automatically.
 
-## 7.5 Monitoring File Processing
+## Monitoring File Processing
 
 Status: `Created → Processing → Ready` (or `Error`). If a file enters Error state, open the record and read the **Error Message**. Use **Reprocess files** to re-queue.
 
-## 7.6 Publishing a Dataset
+## Publishing a Dataset
 
 Only superusers can publish datasets. Select datasets in the list view and use the **Actions** dropdown:
 

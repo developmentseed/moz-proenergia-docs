@@ -1,11 +1,10 @@
 ---
-sidebar_position: 12
 title: "Interface Overview"
 ---
 
-# 12. Frontend Interface Overview
+# Frontend Interface Overview
 
-## 12.1 Getting Started
+## Getting Started
 
 The PROENERGIA+ visualization interface is a web application — no installation required. It runs in any modern browser (Chrome, Firefox, Edge, or Safari).
 
@@ -14,7 +13,7 @@ The PROENERGIA+ visualization interface is a web application — no installation
 | **Public (unauthenticated)** | View and explore all public, approved Data Models. Apply filters, view popups and public data. |
 | **Authenticated User** | Access all public datasets plus any private approved datasets and models. Download all available datasets from the frontend. |
 
-## 12.2 Language Selection
+## Language Selection
 
 The platform supports **English** and **Portuguese** (default). To switch languages, click the **PT / EN** toggle in the top-right of the header. Your preference is saved in the browser and persists across sessions.
 
@@ -22,7 +21,7 @@ Translated content includes: navigation labels, filter labels, scenario names, m
 - Locale JSON files for UI strings
 - The `name_pt` / `description_pt` fields set on Data Models, Scenarios, and Datasets in the administrative platform
 
-## 12.3 Three-Panel Layout
+## Three-Panel Layout
 
 | Panel | Location / Function |
 |---|---|

@@ -1,9 +1,8 @@
 ---
-sidebar_position: 21
 title: "Deployment Overview"
 ---
 
-# 21. Deployment Overview: Five-Script Process
+# Deployment Overview: Five-Script Process
 
 The `deploy/scripts/` directory contains five numbered shell scripts that automate the full deployment. Run them in order.
 

@@ -1,9 +1,8 @@
 ---
-sidebar_position: 19
 title: "Frontend Troubleshooting"
 ---
 
-# 19. Frontend Troubleshooting
+# Frontend Troubleshooting
 
 | Issue | Cause & Resolution |
 |---|---|
