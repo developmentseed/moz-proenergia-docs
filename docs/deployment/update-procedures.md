@@ -1,11 +1,10 @@
 ---
-sidebar_position: 24
 title: "Update Procedures"
 ---
 
-# 24. Update Procedures
+# Update Procedures
 
-## 24.1 Manual Update
+## Manual Update
 
 ```bash
 # Run as the proenergia user
@@ -28,7 +27,7 @@ The update script (`05_update_app.sh`) performs these steps in order:
 Always run migrations **before** restarting the application after a code update that contains schema changes.
 :::
 
-## 24.2 Rollback
+## Rollback
 
 ```bash
 cd /var/www/proenergia/app
@@ -38,7 +37,7 @@ sudo systemctl restart proenergia
 sudo systemctl restart proenergia-celery
 ```
 
-## 24.3 Verification After Update
+## Verification After Update
 
 ```bash
 # Health check (with retry loop)

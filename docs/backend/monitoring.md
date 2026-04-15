@@ -1,16 +1,15 @@
 ---
-sidebar_position: 10
 title: "Monitoring & Troubleshooting"
 ---
 
-# 10. Monitoring and Troubleshooting
+# Monitoring and Troubleshooting
 
-## 10.1 Monitoring Background Tasks
+## Monitoring Background Tasks
 
 - **In Django Admin:** Go to **Django Celery Results → Task Results** to see all completed, failed, and pending tasks.
 - **Via Flower (local dev):** Run `celery -A proenergia flower --address=127.0.0.1 --port=5555` and access `http://localhost:5555`.
 
-## 10.2 Admin Troubleshooting
+## Admin Troubleshooting
 
 | Issue | Cause & Resolution |
 |---|---|

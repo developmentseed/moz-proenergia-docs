@@ -1,9 +1,8 @@
 ---
-sidebar_position: 11
 title: "API Reference"
 ---
 
-# 11. API Reference
+# API Reference
 
 - **Base URL:** `/api/v1/`
 - **Swagger docs:** `/api/v1/docs/`
@@ -22,11 +21,11 @@ title: "API Reference"
 | `GET /api/v1/reference/` | List ReferenceDatasets. Same visibility rules as vector datasets. |
 | `GET /api/v1/reference/{id}/` | Retrieve a single ReferenceDataset. |
 | `GET /api/v1/scenario/{id}/feature/{feature_id}/` | Retrieve all stored metadata for a single feature. Used to populate map popups. |
-| `GET /api/v1/scenario/{id}/summaries/` | Compute statistical summaries. See Section 11.1. |
+| `GET /api/v1/scenario/{id}/summaries/` | Compute statistical summaries. See the [Summaries Endpoint](#summaries-endpoint) below. |
 | `DELETE /api/v1/scenario/{id}/summaries/cache/` | Purge cached summary responses for a scenario. |
 | `POST /api/v1/token-auth/` | Obtain an authentication token. Body: `{"username": "...", "password": "..."}` |
 
-## 11.1 Summaries Endpoint
+## Summaries Endpoint
 
 `GET /api/v1/scenario/{id}/summaries/`
 
