@@ -1,9 +1,8 @@
 ---
-sidebar_position: 19
 title: "Resolução de Problemas do Frontend"
 ---
 
-# 19. Resolução de Problemas do Frontend
+# Resolução de Problemas do Frontend
 
 | Problema | Causa e Resolução |
 |---|---|

@@ -1,11 +1,10 @@
 ---
-sidebar_position: 23
 title: "Configuração Pós-Instalação"
 ---
 
-# 23. Configuração Pós-Instalação
+# Configuração Pós-Instalação
 
-## 23.1 Criar Superutilizador do Painel de Administração Django
+## Criar Superutilizador do Painel de Administração Django
 
 ```bash
 cd /var/www/proenergia/app
@@ -13,7 +12,7 @@ source venv/bin/activate
 python manage.py createsuperuser
 ```
 
-## 23.2 Configurar Webhook do GitHub (Opcional)
+## Configurar Webhook do GitHub (Opcional)
 
 O script `03` gera um segredo de webhook apresentado no final da sua saída (também guardado em `/var/www/proenergia/webhook_secret.txt`).
 
@@ -23,7 +22,7 @@ O script `03` gera um segredo de webhook apresentado no final da sua saída (tam
 4. Cole o segredo do webhook no campo **Segredo**.
 5. Seleccione **Apenas o evento de push**. Clique em **Adicionar webhook**.
 
-## 23.3 Serviços systemd
+## Serviços systemd
 
 | Serviço | Propósito |
 |---|---|

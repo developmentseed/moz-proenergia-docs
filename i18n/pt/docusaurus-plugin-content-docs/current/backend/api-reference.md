@@ -1,9 +1,8 @@
 ---
-sidebar_position: 11
 title: "Referência da API"
 ---
 
-# 11. Referência da API
+# Referência da API
 
 - **URL Base:** `/api/v1/`
 - **Documentação Swagger:** `/api/v1/docs/`
@@ -22,11 +21,11 @@ title: "Referência da API"
 | `GET /api/v1/reference/` | Lista ConjuntosDadosReferência. As mesmas regras de visibilidade que os conjuntos de dados vectoriais. |
 | `GET /api/v1/reference/{id}/` | Recupera um único ConjuntoDadosReferência. |
 | `GET /api/v1/scenario/{id}/feature/{feature_id}/` | Recupera todos os metadados armazenados para uma única característica. Usado para preencher popups do mapa. |
-| `GET /api/v1/scenario/{id}/summaries/` | Calcula resumos estatísticos. Consulte a Secção 11.1. |
+| `GET /api/v1/scenario/{id}/summaries/` | Calcula resumos estatísticos. Consulte [Endpoint de Resumos](#endpoint-de-resumos) abaixo. |
 | `DELETE /api/v1/scenario/{id}/summaries/cache/` | Limpa as respostas de resumo em cache para um cenário. |
 | `POST /api/v1/token-auth/` | Obtém um token de autenticação. Corpo: `{"username": "...", "password": "..."}` |
 
-## 11.1 Endpoint de Resumos
+## Endpoint de Resumos
 
 `GET /api/v1/scenario/{id}/summaries/`
 

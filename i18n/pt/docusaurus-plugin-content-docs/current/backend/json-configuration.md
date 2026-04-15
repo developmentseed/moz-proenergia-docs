@@ -1,9 +1,8 @@
 ---
-sidebar_position: 5
 title: "Campos de Configuração JSON"
 ---
 
-# 5. Campos de Configuração JSON
+# Campos de Configuração JSON
 
 Quatro arrays JSON em cada Modelo de Dados configuram o comportamento do frontend. O painel de administração valida a estrutura ao guardar e reporta erros para chaves obrigatórias em falta ou valores inválidos.
 
@@ -13,7 +12,7 @@ Todo o JSON deve utilizar aspas duplas para chaves e valores de string, sem vír
 
 ---
 
-## 5.1 `filter_fields`
+## `filter_fields`
 
 Define os controlos de filtro apresentados no painel esquerdo. Cada entrada mapeia para um controlo de filtro interactivo.
 
@@ -67,7 +66,7 @@ O frontend deriva o tipo de controlo em tempo de execução a partir do nome da 
 
 ---
 
-## 5.2 `popup_fields`
+## `popup_fields`
 
 Define quais os atributos apresentados quando um utilizador clica numa característica no mapa. Os campos aparecem na ordem listada.
 
@@ -104,7 +103,7 @@ Quando um utilizador clica numa característica, o frontend chama `GET /api/v1/s
 
 ---
 
-## 5.3 `summary_fields`
+## `summary_fields`
 
 Define as estatísticas agregadas apresentadas no painel de Resumo do lado direito.
 
@@ -183,7 +182,7 @@ Se `method` for omitido, o sistema usa `sum` por omissão. Para colunas do tipo 
 
 ---
 
-## 5.4 `color_coding`
+## `color_coding`
 
 Mapeia valores de `visualization_column` para cores específicas no mapa. O valor especial `"default"` define a cor de recuo. O painel de administração valida que cada `color` é uma string hexadecimal válida (3 ou 6 dígitos hexadecimais, com ou sem `#` inicial).
 

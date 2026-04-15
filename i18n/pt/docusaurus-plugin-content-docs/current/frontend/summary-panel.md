@@ -1,15 +1,14 @@
 ---
-sidebar_position: 16
 title: "O Painel de Resumo de Análise"
 ---
 
-# 16. O Painel de Resumo de Análise
+# O Painel de Resumo de Análise
 
-## 16.1 Visão Geral
+## Visão Geral
 
 O Painel de Resumo de Análise apresenta estatísticas agregadas que se actualizam em tempo real quando os filtros são aplicados. Todas as estatísticas correspondem a entradas na configuração `summary_fields` do Modelo de Dados.
 
-## 16.2 Formatos de Apresentação de Estatísticas
+## Formatos de Apresentação de Estatísticas
 
 | Tipo de apresentação | Quando mostrado |
 |---|---|
@@ -20,6 +19,6 @@ O Painel de Resumo de Análise apresenta estatísticas agregadas que se actualiz
 | **Grupo de múltiplas colunas** | `columns` tem múltiplas entradas. Cada coluna é uma sub-linha agregada por `method`. |
 | **Grupo aninhado** | `group_by` definido para duas colunas. Mostra uma distribuição agrupada de dois níveis. |
 
-## 16.3 Categorias de Resumo
+## Categorias de Resumo
 
 Os itens que partilham o mesmo valor de `category` são agrupados sob um cabeçalho recolhível no painel de resumo.

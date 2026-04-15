@@ -1,11 +1,10 @@
 ---
-sidebar_position: 24
 title: "Procedimentos de Actualização"
 ---
 
-# 24. Procedimentos de Actualização
+# Procedimentos de Actualização
 
-## 24.1 Actualização Manual
+## Actualização Manual
 
 ```bash
 # Executar como utilizador proenergia
@@ -28,7 +27,7 @@ O script de actualização (`05_update_app.sh`) executa estes passos por ordem:
 Execute sempre as migrações **antes** de reiniciar a aplicação após uma actualização de código que contém alterações de esquema.
 :::
 
-## 24.2 Reversão
+## Reversão
 
 ```bash
 cd /var/www/proenergia/app
@@ -38,7 +37,7 @@ sudo systemctl restart proenergia
 sudo systemctl restart proenergia-celery
 ```
 
-## 24.3 Verificação Após Actualização
+## Verificação Após Actualização
 
 ```bash
 # Verificação de estado (com ciclo de repetição)

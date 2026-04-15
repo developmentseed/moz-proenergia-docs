@@ -1,11 +1,10 @@
 ---
-sidebar_position: 18
 title: "Páginas de Conteúdo e Documentação"
 ---
 
-# 18. Páginas de Conteúdo e Documentação
+# Páginas de Conteúdo e Documentação
 
-## 18.1 Sistema de Conteúdo Baseado em MDX
+## Sistema de Conteúdo Baseado em MDX
 
 A plataforma inclui páginas de documentação estáticas criadas em **MDX** (Markdown com componentes React integrados). Estas páginas suportam conteúdo bilingue através de ficheiros MDX específicos de localidade.
 

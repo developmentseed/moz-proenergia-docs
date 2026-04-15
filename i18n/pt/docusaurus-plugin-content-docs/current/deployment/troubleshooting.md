@@ -1,9 +1,8 @@
 ---
-sidebar_position: 26
 title: "Resolução de Problemas de Implantação"
 ---
 
-# 26. Resolução de Problemas de Implantação
+# Resolução de Problemas de Implantação
 
 | Problema | Causa e Resolução |
 |---|---|

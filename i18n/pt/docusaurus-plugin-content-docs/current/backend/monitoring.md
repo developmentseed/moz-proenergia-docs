@@ -1,16 +1,15 @@
 ---
-sidebar_position: 10
 title: "Monitorização e Resolução de Problemas"
 ---
 
-# 10. Monitorização e Resolução de Problemas
+# Monitorização e Resolução de Problemas
 
-## 10.1 Monitorizar Tarefas em Segundo Plano
+## Monitorizar Tarefas em Segundo Plano
 
 - **No Painel de Administração Django:** Vá a **Django Celery Results → Resultados de Tarefas** para ver todas as tarefas concluídas, falhadas e pendentes.
 - **Via Flower (desenvolvimento local):** Execute `celery -A proenergia flower --address=127.0.0.1 --port=5555` e aceda a `http://localhost:5555`.
 
-## 10.2 Resolução de Problemas do Painel de Administração
+## Resolução de Problemas do Painel de Administração
 
 | Problema | Causa e Resolução |
 |---|---|

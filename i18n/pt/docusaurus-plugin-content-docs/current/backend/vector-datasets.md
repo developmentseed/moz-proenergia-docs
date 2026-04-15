@@ -1,21 +1,20 @@
 ---
-sidebar_position: 7
 title: "Conjuntos de Dados Vectoriais e Ficheiros Vectoriais"
 ---
 
-# 7. Conjuntos de Dados Vectoriais e Ficheiros Vectoriais
+# Conjuntos de Dados Vectoriais e Ficheiros Vectoriais
 
-## 7.1 O Que É um Conjunto de Dados Vectorial?
+## O Que É um Conjunto de Dados Vectorial?
 
 Um Conjunto de Dados Vectorial é um contentor nomeado para geometria espacial — a colecção de pontos, linhas ou polígonos renderizados no mapa. Os Cenários referenciam um Conjunto de Dados Vectorial para obter a sua geometria espacial.
 
-## 7.2 Adicionar um Novo Conjunto de Dados Vectorial
+## Adicionar um Novo Conjunto de Dados Vectorial
 
 1. Vá a **Conjuntos de Dados → Conjuntos de Dados Vectoriais → + Adicionar Conjunto de Dados Vectorial**.
-2. Preencha os campos de metadados (consulte a Secção 7.3).
+2. Preencha os campos de metadados (consulte a tabela de campos abaixo).
 3. Clique em **Guardar**. Em seguida, pode carregar Ficheiros Vectoriais.
 
-## 7.3 Referência dos Campos do Conjunto de Dados Vectorial
+## Referência dos Campos do Conjunto de Dados Vectorial
 
 | Campo | Descrição |
 |---|---|
@@ -33,7 +32,7 @@ Um Conjunto de Dados Vectorial é um contentor nomeado para geometria espacial �
 | **É Público** | Apenas superutilizador. Se marcado, o conjunto de dados é visível para utilizadores não autenticados. |
 | **Está Aprovado** | Apenas superutilizador. Deve ser aprovado antes de o conjunto de dados poder ser usado em Cenários ou apresentado no frontend. |
 
-## 7.4 Adicionar Ficheiros Vectoriais
+## Adicionar Ficheiros Vectoriais
 
 O carregamento desencadeia uma tarefa Celery: ficheiro → FlatGeobuf (GDAL) → PMTiles (Tippecanoe).
 
@@ -50,11 +49,11 @@ O carregamento desencadeia uma tarefa Celery: ficheiro → FlatGeobuf (GDAL) →
 
 4. Clique em **Guardar**. O processamento começa automaticamente.
 
-## 7.5 Monitorizar o Processamento de Ficheiros
+## Monitorizar o Processamento de Ficheiros
 
 Estado: `Criado → Em Processamento → Pronto` (ou `Erro`). Se um ficheiro entrar em estado de Erro, abra o registo e leia a **Mensagem de Erro**. Use **Reprocessar ficheiros** para re-enfileirar.
 
-## 7.6 Publicar um Conjunto de Dados
+## Publicar um Conjunto de Dados
 
 Apenas os superutilizadores podem publicar conjuntos de dados. Seleccione conjuntos de dados na vista de lista e use o menu suspenso **Acções**:
 

@@ -1,9 +1,8 @@
 ---
-sidebar_position: 22
 title: "Configuração do Ambiente"
 ---
 
-# 22. Configuração do Ambiente
+# Configuração do Ambiente
 
 O ficheiro `.env` é gerado automaticamente pelo script `01` e colocado em `/var/www/proenergia/app/.env`. Variáveis principais:
 

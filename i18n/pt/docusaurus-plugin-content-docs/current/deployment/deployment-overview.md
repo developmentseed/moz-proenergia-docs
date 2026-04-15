@@ -1,9 +1,8 @@
 ---
-sidebar_position: 21
 title: "Visão Geral da Implantação"
 ---
 
-# 21. Visão Geral da Implantação: Processo de Cinco Scripts
+# Visão Geral da Implantação: Processo de Cinco Scripts
 
 O directório `deploy/scripts/` contém cinco scripts shell numerados que automatizam a implantação completa. Execute-os por ordem.
 

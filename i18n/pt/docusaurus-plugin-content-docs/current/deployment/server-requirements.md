@@ -1,9 +1,8 @@
 ---
-sidebar_position: 20
 title: "Requisitos do Servidor"
 ---
 
-# 20. Requisitos do Servidor e Pré-requisitos
+# Requisitos do Servidor e Pré-requisitos
 
 **SO:** Ubuntu 24.04 LTS (recomendado). Mínimo de 4 GB de RAM; 16 GB+ recomendado para produção.
 
