@@ -1,0 +1,37 @@
+---
+title: "Aceder ao Painel de Administração"
+---
+
+# Aceder ao Painel de Administração Django
+
+## URL e Início de Sessão
+
+O Painel de Administração Django está acessível em:
+
+- **Produção:** `https://<domínio-de-implantação>/admin/`
+- **Desenvolvimento local:** `http://localhost:8000/admin/`
+
+Inicie sessão com uma conta de status de equipa ou superuser. Navegue até à página de início de sessão, introduza as suas credenciais e clique em **Iniciar Sessão**.
+
+:::note
+Numa implantação nova, é necessário criar um utilizador com status de superuser através da linha de comandos antes de qualquer pessoa poder iniciar sessão. Consulte [Criar o Superutilizador Inicial](#criar-o-superutilizador-inicial-cli) abaixo.
+:::
+
+## Ecrã Inicial do Painel de Administração
+
+Após iniciar sessão, o painel de administração lista todos os grupos de modelos registados:
+
+- **Autenticação e Autorização** — Gestão de Utilizadores e Grupos
+- **Conjuntos de Dados** — ModeloDados, ConjuntoDadosVectorial, FicheiroVectorial, ConjuntoDadosRaster, FicheiroRaster, ConjuntoDadosReferência, FicheiroReferência, Cenário, FicheiroCenário
+
+## Criar o Superutilizador Inicial (CLI)
+
+```bash
+cd /var/www/proenergia/app
+source venv/bin/activate
+python manage.py createsuperuser
+```
+
+:::note
+As contas de superutilizador devem ser restritas a um pequeno número de administradores de confiança. Utilize contas de Administrador ao nível de status de equipa para a gestão do dia-a-dia.
+:::
