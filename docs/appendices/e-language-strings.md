@@ -12,7 +12,7 @@ There are three distinct translation mechanisms depending on the type of content
 | Content type | Mechanism | Where translations live |
 |---|---|---|
 | UI strings (buttons, labels, messages) | i18next locale JSON files | `src/i18n/locales/{en,pt}.json` |
-| Backend data (model/scenario/layer names) | `_pt` fields on admin records | Django Admin form fields |
+| Backend data (model/scenario/layer names) | `_pt` fields read directly via `useLocalize` | `src/utils/i18n.ts` |
 | Long-form page content | Locale-specific MDX files | `src/app/<page>/<slug>.pt.mdx` |
 
 ---
@@ -42,7 +42,6 @@ Strings are organised into namespaces based on the area of the interface they be
 | `map` | Legend title, additional layers panel label |
 | `models` | Model listing page strings |
 | `breadcrumbs` | Page-level breadcrumb labels |
-| `labels` | Data field labels keyed by CSV column name (e.g. `labels.Admin_1.label`) |
 
 ### How to edit an existing string
 
@@ -149,29 +148,36 @@ All translations for backend data are set in the **Django Admin interface**. Whe
 
 ### How it works in the frontend
 
-When the frontend fetches data from the API, each record includes both `name` (English) and `name_pt` (Portuguese) fields. The data transformation layer registers these into the i18next runtime store at load time:
+`src/utils/i18n.ts` exports a single hook:
 
 ```ts
-// Happens automatically in src/utils/data-transformation.ts
-registerI18nResource(`model.${m.id}`, {
-  name: { en: m.name, pt: m.name_pt },
-  description: { en: m.description, pt: m.description_pt },
-});
+import { useLocalize } from "@/utils/i18n";
+
+function MyComponent({ layer }: { layer: Layer }) {
+  const localize = useLocalize();
+  return <Text>{localize(layer.label, layer.label_pt)}</Text>;
+}
 ```
 
-Components then read with a fallback so they always have something to display:
+`localize(en, pt)` returns `pt` when the active language is Portuguese and `pt` is non-empty, otherwise returns `en`.
 
-```tsx
-t(`model.${model.id}.name`, { defaultValue: model.name })
-```
+Reactivity is automatic: `useLocalize` calls `useTranslation()` internally, so the component re-renders whenever the user switches language.
 
-### Currently registered entity types
+### API fields by entity
 
-| Entity | i18next key pattern | API fields used |
-|---|---|---|
-| Data Model | `model.{id}.name`, `model.{id}.description` | `name_pt`, `description_pt` |
-| Scenario | `scenario.{id}.name` | `name_pt` |
-| Vector layer | `layer.{sourceId}.label`, `layer.{sourceId}.description` | `name_pt`, `description_pt` |
+| Entity | EN field | PT field |
+|--------|----------|----------|
+| Model (group list) | `name`, `description` | `name_pt`, `description_pt` |
+| Model (detail) | `name`, `description` | `name_pt`, `description_pt` |
+| Scenario | `name` / `label`, `description` | `name_pt`, `description_pt` |
+| Vector / raster layer | `label`, `description` | `label_pt`, `description_pt` |
+| Filter / popup / summary field | `label`, `description` | `label_pt`, `description_pt` |
+
+
+### Missing translations
+
+If a `_pt` field is `null` or absent in the API response, `localize()` automatically falls back to the English value. No special handling is needed in components. To fix a missing translation, populate the `_pt` field in the backend admin.
+
 
 ### To update a translated name or description
 
@@ -184,7 +190,7 @@ t(`model.${model.id}.name`, { defaultValue: model.name })
 The change is reflected in the frontend on the next page load (or after the API cache expires).
 
 :::note No code change required
-Updating backend data translations requires only a Django Admin edit — no code deployment is needed.
+Updating backend data translations requires only a Django Admin edit — no code deployment is needed unless there is new API entity types with `_pt` fields.
 :::
 
 ---
@@ -260,8 +266,8 @@ There is no server-side language detection. The language is always resolved clie
 Before submitting a pull request that touches any user-facing text, verify:
 
 - [ ] Both `en.json` and `pt.json` have the same keys. Missing keys fall back to English silently.
-- [ ] No user-facing string is hardcoded directly in JSX — use `t()`.
-- [ ] Any component using `t()` or `useTranslation()` is marked `"use client"`.
+- [ ] No user-facing string is hardcoded in JSX — use `t()` for UI strings, `useLocalize` for data fields.
+- [ ] Components using `t()`, `useTranslation`, or `useLocalize` are marked `"use client"`.
 - [ ] Strings use `{{variable}}` interpolation, never string concatenation.
 - [ ] If you added a new namespace, the table in Section 1 of this appendix has been updated.
 - [ ] If you updated a backend record's translation, the change has been saved in the Django Admin and verified in the frontend at both `/en` and `/pt` language settings.
